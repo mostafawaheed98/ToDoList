@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowee | @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <!--start of login page body-->
+    <section class="login-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="login-info">
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs" style="padding-left: 0px;">
+                    <div class="login-img hidden-sm hidden-xs">
+                        <div class="login-img-data text-center">
+                            <i class="fa fa-check-square-o"></i>
+                            <p>Dowee</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of login page body-->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

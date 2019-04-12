@@ -1,45 +1,50 @@
 ﻿@model ToDoList.Models.RegisterViewModel
 @{
+    Layout = "~/Views/Shared/_LoginLayout .cshtml";
     ViewBag.Title = "Register";
 }
 
-<h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+<h1>Welcome To Dowee.</h1>
+<h2>@ViewBag.Title Now</h2>
+<P>We are wait for you to serve you with love <i class="fa fa-heart"></i></P>
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal login-form", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
+    @Html.ValidationSummary(true,"", new { @class = "text-danger" })
+<div class="form-group">
+    <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user"></i></span>
+        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", aria_describedby = "sizing-addon2", placeholder = "Username" })
+    </div>
+    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+</div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Username, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-envelope-o"></i></span>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", aria_describedby = "sizing-addon2", placeholder = "Email" })
         </div>
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock"></i></span>
+            @Html.TextBoxFor(m => m.Password, new { @class = "form-control", aria_describedby = "sizing-addon2", placeholder = "Password" })
         </div>
+        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-shield"></i></span>
+            @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control", aria_describedby = "sizing-addon2", placeholder = "Confirm Password" })
         </div>
+        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
+    <input type="submit" class="btn btn-default" value="Register" />
+
+    <p class="gotoRegister">
+        @Html.ActionLink("Have An Account ? Login Now", "Login")
+    </p>
 }
 
 @section Scripts {

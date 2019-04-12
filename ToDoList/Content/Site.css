@@ -1,6 +1,9 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,16 +12,148 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/*------------------start of login page------------------*/
+
+/*start of login-body*/
+.login-img {
+    background-color: #fff;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    color: #23e070;
 }
+
+.login-img img {
+    margin: 0px auto;
+    width: 400px;
+    height: 400px;
+}
+
+.login-img-data {
+    text-align: left;
+    width: 350px;
+    margin: 100px auto;
+}
+
+.login-img .login-img-data p {
+    font-size: 70px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-img .login-img-data .fa {
+    font-size: 380px;
+    display: inline-block;
+}
+
+.login-img h1 {
+    margin: 0px
+}
+
+.login-info {
+    padding: 70px;
+    background: #23e070;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    color: #fff;
+}
+
+.login-info {
+    padding: 100px;
+}
+
+.login-info h1 {
+    color: #23e070;
+}
+
+.login-info h3 {
+    color: #091627;
+}
+
+.login-info .login-form {
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+.login-info .input-group-addon {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.login-info .form-control {
+    border: 1px solid #333;
+}
+
+.login-info .login-form .btn {
+    display: block;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.login-info .login-form .btn:hover {
+    background-color: #fff;
+    color: #333;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.login-info .login-form .radio label,
+.login-info .login-form .checkbox label {
+    padding-left: 0px;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: inherit;
+    margin-top: 4px \9;
+    margin-left: 0px;
+}
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.login-info h1 {
+    color: #fff;
+}
+
+.login-info h2 {
+    color: #333;
+}
+.login-info .gotoRegister {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.login-info .gotoRegister a {
+    text-decoration:none;
+    color: #000;
+}
+.login-info .gotoRegister a:hover{color:#fff;}
+@media screen and (max-width: 400px) {
+    .login-info {
+        padding: 40px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .login-info {
+        width: 100%;
+    }
+}
+/*end of login-body*/
+
+/*------------------end of login page------------------*/
