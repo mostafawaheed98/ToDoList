@@ -20,14 +20,14 @@ body {
 
 /*start of login-body*/
 .login-img {
-    background-color: #fff;
+    background-color: #B6E9FF;
     bottom: 0;
     height: 100%;
     right: 0;
     position: fixed;
     top: 0;
     width: 50%;
-    color: #23e070;
+    color: #0E5681;
 }
 
 .login-img img {
@@ -60,7 +60,7 @@ body {
 
 .login-info {
     padding: 70px;
-    background: #23e070;
+    background: #0E5681;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -131,7 +131,7 @@ body {
 }
 
 .login-info h2 {
-    color: #333;
+    color: #B6E9FF;
 }
 .login-info .gotoRegister {
     margin-top: 20px;
@@ -139,7 +139,7 @@ body {
 }
 .login-info .gotoRegister a {
     text-decoration:none;
-    color: #000;
+    color: #B6E9FF;
 }
 .login-info .gotoRegister a:hover{color:#fff;}
 @media screen and (max-width: 400px) {
@@ -157,3 +157,145 @@ body {
 /*end of login-body*/
 
 /*------------------end of login page------------------*/
+
+
+/*start of navbar*/
+.navbar-default {
+    background-color: #fff;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 3px solid #0E5681;
+    border-top: 3px solid #0E5681;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: #0e5681;
+}
+.navbar-default .navbar-brand:hover {
+    color: #000;
+}
+@media (min-width: 768px) {
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #0E5681;
+    border-radius: 5px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #0E5681;
+    color: #B6E9FF;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding: 10px 22px;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+        margin: 10px 0px;
+    }
+
+    .navbar-nav > li > :hover {
+        padding-left: 25px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.navbar-toggle {
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #B6E9FF;
+}
+
+.navbar-toggle .icon-bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0E5681;
+}
+/*end of navbar*/
+
+/*start of header*/
+header {
+    background: url('../images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .color-content {
+    background-image: linear-gradient(-45deg, rgba(14, 87, 129, 0.8), rgba(182, 233, 255, 0.8));
+    height: 100vh;
+}
+
+header h1 {
+    margin: 0px;
+    color: #0E5681;
+    font-size: 150px;
+    padding-top: 150px;
+    margin-bottom: 0px;
+}
+
+header h3 {
+    color: #fff;
+}
+
+header button {
+    background-color: #0E5681;
+    color: #B6E9FF;
+    padding: 15px 40px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+header button:hover {
+    background-color: #B6E9FF;
+    color: #0E5681;
+}
+
+header button.LoginButton {
+    background-color: #B6E9FF;
+    color: #0E5681;
+}
+header button.LoginButton:hover {
+    background-color: #0E5681;
+    color: #B6E9FF;
+}
+    header .spaceBottons{
+        color:#fff;
+        font-size:20px;
+        margin:0px 5px;
+    }
+/*end of header*/
+
+
+
+
+
+
+
+
+
+
