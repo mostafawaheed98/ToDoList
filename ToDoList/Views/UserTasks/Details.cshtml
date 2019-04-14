@@ -4,63 +4,56 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
+<h2 class="main-title">Details Of Your Dowee!</h2>
+@Html.ActionLink("Edit This Dowee", "Edit", new { id = Model.Id } , new { @class = "btn createBtn" }) |
+@Html.ActionLink("Back to Your Dowees", "Index", null, new { @class = "btn createBtn" })
 <div>
-    <h4>UserTask</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+    <table class="table table-bordered table-hover">
+        <tr class="FirstData">
+            <th>
+                Dowee Title
+            </th>
+            <th>
+                Dowee Description
+            </th>
+            <th>
+                Dowee Due Data
+            </th>
+            <th>
+                Dowee Status
+            </th>
+            <th>
+                Dowee Priority
+            </th>
+        </tr>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.DueData)
+            </td>
+            <td>
+                @if (Model.Status == true)
+                {
+                    <span>Done</span>
+                }
+                else if (Model.Status == false)
+                {
+                    <span>Doing</span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Priority)
+            </td>
+        </tr>
+        
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DueData)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DueData)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Priority)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Priority)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Attachment)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Attachment)
-        </dd>
-
-    </dl>
+    </table>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

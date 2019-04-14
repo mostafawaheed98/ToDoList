@@ -161,7 +161,7 @@ body {
 
 /*start of navbar*/
 .navbar-default {
-    background-color: #fff;
+    background-color: #B6E9FF;
     border-radius: 0px;
     border: 0px;
     border-bottom: 3px solid #0E5681;
@@ -290,7 +290,28 @@ header button.LoginButton:hover {
     }
 /*end of header*/
 
+.table tbody tr:nth-child(odd) {
+    background: #eee;
+}
 
+.table tbody tr.FirstData {
+    background-color: #0e5681;
+    color: #B6E9FF;
+}
+.createBtn{
+    background-color:#0E5681;
+    color:#B6E9FF;
+}
+.createBtn:hover {
+    background-color: #B6E9FF;
+    color: #0E5681;
+}
+.main-title{
+    border-left:3px solid #B6E9FF;
+    padding-left:10px;
+    color:#0E5681;
+    margin-bottom:30px;
+}
 
 
 

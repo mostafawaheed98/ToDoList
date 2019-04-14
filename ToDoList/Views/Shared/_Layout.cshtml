@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dowee | @ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+
 
 </head>
 <body>
@@ -24,7 +25,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="~/UserTasks/Index">My Tasks</a></li>
+                    <li><a href="~/UserTasks/Index">My Dowees</a></li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -36,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>Dowee &copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 

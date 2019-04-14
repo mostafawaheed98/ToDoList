@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201904121433351_todo1.Designer.cs">
       <DependentUpon>201904121433351_todo1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904141907294_DropAttachment.cs" />
+    <Compile Include="Migrations\201904141907294_DropAttachment.Designer.cs">
+      <DependentUpon>201904141907294_DropAttachment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -298,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904121433351_todo1.resx">
       <DependentUpon>201904121433351_todo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904141907294_DropAttachment.resx">
+      <DependentUpon>201904141907294_DropAttachment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

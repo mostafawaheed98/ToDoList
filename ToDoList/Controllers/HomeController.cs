@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,16 @@ namespace ToDoList.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            string ThisUserId = User.Identity.GetUserId();
+            if (ThisUserId != null)
+            {
+                return RedirectToAction("Index", "UserTasks");
+            }
+            else
+            {
+                return View();
+            }
+            
         }
 
     }

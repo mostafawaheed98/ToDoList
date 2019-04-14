@@ -23,7 +23,7 @@ namespace ToDoList.Controllers
             if (ThisUserId != null)
             {
                 ApplicationUser ThisUser = db.Users.FirstOrDefault(x => x.Id == ThisUserId);
-                return View(db.Tasks.ToList().Where( x=>x.User == ThisUser));
+                return View(db.Tasks.ToList().OrderBy( x => x.Priority ).Where( x=>x.User == ThisUser));
             }
             else
             {
@@ -118,7 +118,7 @@ namespace ToDoList.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Description,DueData,Status,Priority,Attachment")] UserTask userTask)
+        public ActionResult Edit([Bind(Include = "Id,Title,Description,DueData,Status,Priority")] UserTask userTask)
         {
             if (ModelState.IsValid)
             {

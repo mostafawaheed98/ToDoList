@@ -15,7 +15,6 @@ namespace ToDoList.Models
         public DateTime DueData { get; set; }
         public bool Status { get; set; }
         public int Priority { get; set; }
-        public string Attachment { get; set; }
 
         public virtual ApplicationUser User { get; set; }
     }
