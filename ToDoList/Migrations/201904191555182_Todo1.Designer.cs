@@ -7,13 +7,13 @@ namespace ToDoList.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class DropAttachment : IMigrationMetadata
+    public sealed partial class Todo1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DropAttachment));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Todo1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904141907294_DropAttachment"; }
+            get { return "201904191555182_Todo1"; }
         }
         
         string IMigrationMetadata.Source
