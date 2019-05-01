@@ -201,6 +201,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ToDoListDB.mdf" />
+    <Content Include="App_Data\ToDoListDB_log.ldf">
+      <DependentUpon>ToDoListDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -284,9 +288,7 @@
     <Content Include="Views\Shared\_LoginLayout .cshtml" />
     <Content Include="Views\Shared\_LayoutWithoutNavbar.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
