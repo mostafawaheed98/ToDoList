@@ -180,27 +180,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904112229215_InitialCreate.cs" />
-    <Compile Include="Migrations\201904112229215_InitialCreate.Designer.cs">
-      <DependentUpon>201904112229215_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904121433351_todo1.cs" />
-    <Compile Include="Migrations\201904121433351_todo1.Designer.cs">
-      <DependentUpon>201904121433351_todo1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904141907294_DropAttachment.cs" />
-    <Compile Include="Migrations\201904141907294_DropAttachment.Designer.cs">
-      <DependentUpon>201904141907294_DropAttachment.cs</DependentUpon>
+    <Compile Include="Migrations\201904191555182_Todo1.cs" />
+    <Compile Include="Migrations\201904191555182_Todo1.Designer.cs">
+      <DependentUpon>201904191555182_Todo1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\UserAttachment.cs" />
     <Compile Include="Models\UserTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ToDoListDB.mdf" />
+    <Content Include="App_Data\ToDoListDB_log.ldf">
+      <DependentUpon>ToDoListDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -284,9 +281,7 @@
     <Content Include="Views\Shared\_LoginLayout .cshtml" />
     <Content Include="Views\Shared\_LayoutWithoutNavbar.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
@@ -297,14 +292,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904112229215_InitialCreate.resx">
-      <DependentUpon>201904112229215_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904121433351_todo1.resx">
-      <DependentUpon>201904121433351_todo1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904141907294_DropAttachment.resx">
-      <DependentUpon>201904141907294_DropAttachment.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904191555182_Todo1.resx">
+      <DependentUpon>201904191555182_Todo1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
