@@ -39,7 +39,7 @@ body {
 .login-img-data {
     text-align: left;
     width: 350px;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .login-img .login-img-data p {
@@ -70,9 +70,9 @@ body {
     color: #fff;
 }
 
-.login-info {
+/*.login-info {
     padding: 100px;
-}
+}*/
 
 .login-info h1 {
     color: #23e070;
@@ -239,9 +239,9 @@ body {
 
 /*start of header*/
 header {
-    background: url('../images/header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../images/header.jpg') no-repeat center;
+    /*background-position: center;
+    background-repeat: no-repeat;*/
     background-size: cover;
 }
 header .color-content {
@@ -252,13 +252,14 @@ header .color-content {
 header h1 {
     margin: 0px;
     color: #0E5681;
-    font-size: 150px;
+    font-size: 100px;
     padding-top: 150px;
     margin-bottom: 0px;
 }
 
 header h3 {
     color: #fff;
+    margin-bottom: 1em; 
 }
 
 header button {
@@ -267,12 +268,18 @@ header button {
     padding: 15px 40px;
     border: 0px;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 50px;
+    padding: 1em 0;
+}
+
+header a:hover {
+    text-decoration: none;
 }
 
 header button:hover {
     background-color: #B6E9FF;
     color: #0E5681;
+    text-decoration: none;
 }
 
 header button.LoginButton {
@@ -283,11 +290,11 @@ header button.LoginButton:hover {
     background-color: #0E5681;
     color: #B6E9FF;
 }
-    header .spaceBottons{
-        color:#fff;
-        font-size:20px;
-        margin:0px 5px;
-    }
+header .spaceBottons{
+    color:#fff;
+    font-size:20px;
+    margin:0px 5px;
+}
 /*end of header*/
 
 .table tbody tr:nth-child(odd) {
